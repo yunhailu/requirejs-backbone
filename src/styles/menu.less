@@ -1,0 +1,83 @@
+@import "base.less";
+
+.menu{
+  .bgc(white); .pf(); .w(100%); .h(150rem);
+  .index01{
+    .pd(1rem);
+    .logo{
+      img{ .w(60%); .h(auto); .mg(0.5rem); }
+    }
+    .close{
+      img{ .w(60%); .h(auto); }
+    }
+  }
+
+  .index02{
+    .mg(10% 0rem);
+    span{ .lh(3rem); .vm(); .mg(1rem 0.5rem 1rem 1.5rem); .c(#4d4d4d); }
+    img{ .w(2rem); .h(2rem); .mg(0rem); }
+  }
+
+  .index03{
+    ul{
+      .item{
+        .lh(4rem); .c(#4d4d4d); .t(right);
+        .pd(0rem 2rem);
+      }
+      .active{
+        .bgc(#f9686a); .c(white);
+      }
+    }
+  }
+
+  .index04{
+    .mg(0.5rem 0rem);
+    .share{
+      .bgimg('@{cdnPath}share-icon.png'); .bgrepeat(no-repeat);
+      .w(13rem); .h(3.4rem);
+      .bgpos(0.5rem 0.4rem);
+      a{
+        .disIB(); .w(3.5rem); .h(3rem); .mg(0.2rem 0.4rem);
+      }
+    }
+  }
+
+  .index05{
+    .pf(); bottom: 12%;  left: 0%; .w(100%);
+    .mailPanel {
+      .w(80%); .tc(); .c(#f7696d); .mgc();
+      .mg(3rem auto 0rem);
+      .mail-box {
+        .w(100%); .h(2.9rem); .bgc(#f7696d);
+        .br(2.8rem); .c(white);
+        .pd(0rem 1.6rem);
+        input {
+          .w(64%); .h(2.8rem); .lh(2.8rem);
+          .bgc(transparent); .c(white);
+          border: none;
+          float: left;
+        }
+        input::-webkit-input-placeholder {
+          .c(white); .opacity(50);
+        }
+        button {
+          .w(35%); .h(2.8rem); .bgc(transparent);
+          .c(white);  .lh(2.8rem);  .tc();
+          float: right;
+          border: none;
+          font-family: "Lucida Grande";
+          border-left: #ffffff solid 1px;
+        }
+      }
+    }
+  }
+
+  .index06{
+    .pf(); bottom: 0%;  left: 0%; .w(100%);
+    .row{
+      .pd(1rem 1rem); .lh(2rem); .c(#7f7f7f);
+      font-family: "Adobe 黑体 Std";
+      a{.c(#7f7f7f); .t(right); float: right;}
+    }
+  }
+}

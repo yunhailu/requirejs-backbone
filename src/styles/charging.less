@@ -1,0 +1,62 @@
+@import "base.less";
+
+.charging{
+  .index01{
+    .pd(4rem 0rem 0%); .bgc(white);
+    .component{
+      .pd(20% 0rem 55%); .pr();
+      .bgimg('@{cdnPath}oval.png'); .bgsize(100%);
+      .bgrepeat(no-repeat); .bgpos(40% 100%);
+      .title{
+        .w(100%); .tc(); .lh(2.4rem); .mg(5% auto);
+      }
+      .text{
+        .w(100%); .tc(); .lh(1.6rem); .c(#9b9b9b);
+      }
+      .componentImg{
+        .w(100%); .h(auto);
+        .pa(); top: 58%; left: 0%;
+      }
+    }
+
+    //继承.component
+    .c_0{}
+    .c_1{
+      .componentImg{ .w(50%); left: 25%; }
+    }
+    .c_2{
+      .componentImg{ .w(92%); left: 4%; }
+    }
+  }
+
+  .index02{
+    .bgc(#21b672); .bgimg('@{cdnPath}wallhaven.jpg');
+    .pd(15% 0rem); .bgcenter();
+    .bgrepeat(no-repeat);
+    .text{
+      .c(white); .tc(); .lh(1.6rem); font-family: "Helvetica"; .pd(2% 0rem 5%);
+    }
+    .title{
+      .lh(3rem); .pd(0% 0rem 2%);
+    }
+    .battery{
+      img{
+        .w(80%); .h(auto); .disB(); .mg(8% auto);
+      }
+
+    }
+  }
+
+  .index03{
+    .bgc(#656565); .pd(10% 0rem 0%);
+    .text{
+      .c(white); .tc(); .w(100%); .pd(5% 0rem 0%); .lh(2rem);
+    }
+    .hand{
+      .w(90%); .mg(15% 0rem 0%);
+      img{
+        .w(70%); .h(auto); .disB(); .mgc();
+      }
+    }
+  }
+}

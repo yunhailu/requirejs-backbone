@@ -1,0 +1,35 @@
+@import "base.less";
+
+.header{
+  .pf(); .w(100%); .z(1001);
+  .headerBg{
+    .bgc(white); .opacity(60);
+    .w(100%); .h(4rem);
+    .pa(); .z(1);
+    .shadow();
+  }
+  .headerCxt{
+    .pa(); .z(10);
+    .w(100%); .h(4rem);
+    .icon{
+      .w(5.4rem); .h(4rem);
+      float: left;
+      img{
+        .w(2.2rem); .h(2.2rem); .mg(0.9rem 1.6rem);
+      }
+    }
+    .title{
+      .c(@word); .lh(4rem);
+      .mg(0rem 5.4rem);
+      font-family: "Lucida Grande";
+      text-align: right;
+    }
+    .headMenu{
+      .w(5.4rem); .h(4rem);
+      float: right;
+      img{
+        .w(1.8rem); .h(1.8rem); .mg(1.1rem 1.8rem);
+      }
+    }
+  }
+}

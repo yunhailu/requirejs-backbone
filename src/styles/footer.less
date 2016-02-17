@@ -1,0 +1,26 @@
+@import "base.less";
+
+.footer{
+  .w(100%); border-top: 0.1rem solid #e6e6e6;
+  .pd(10% 0rem 20%);
+  .lang{
+    .tc(); .c(@footerWord);
+    .lh(2.4rem);
+    //a{.c(@footerWord);}
+  }
+  .logo_bottom{
+    img{
+      .w(100%); .h(auto); .vm();
+      .disB(); .mg(0.4rem 0rem);
+    }
+  }
+  .contact{
+    .c(@footerWord); .tc();
+    .lh(2.4rem);
+    a{.c(@footerWord);}
+  }
+  .copyright{
+    .c(@footerWord); .tc();
+    .lh(2.4rem);
+  }
+}

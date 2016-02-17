@@ -1,0 +1,25 @@
+@import "base.less";
+
+.sliderPanel{
+  #sliders{
+    li{
+      .disIB(); .w(20%);
+      img{.w(100%); .h(auto); .disB(); .mgc();}
+    }
+  }
+  .headText{
+    .c(@word); .tc(); .w(100%); .h(3.6rem); .mg(2rem auto 0rem);
+    sup{.c(@word);}
+  }
+  .btns{
+    .w(15%); .mgc(); .mg(1rem auto 2rem);
+    li{
+      .w(0.5rem); .h(0.5rem); .bgc(white);
+      .br(0.25rem); .b(0.15rem solid @slider);
+      .disIB(); .mg(0rem 5%);
+    }
+    .active{
+      .bgc(@slider);
+    }
+  }
+}

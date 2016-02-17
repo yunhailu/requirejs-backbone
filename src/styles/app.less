@@ -1,0 +1,40 @@
+@import "base.less";
+
+.app{
+  .bgc(white); .pd(15% 0rem);
+  .index01{
+    .pd(15% 0rem 15%);
+    .title{
+      .tc(); .w(100%); .lh(2rem);
+    }
+  }
+
+  .index02{
+    .appSlider{
+      .w(100%);
+      #appSlider{
+        .w(100%); overflow: hidden;
+        .btns{.w(10%);}
+      }
+    }
+  }
+
+  .index03{
+    .pd(5% 0rem 5%);
+    .doc{
+      .disN();
+      .title{
+        .lh(3rem);
+      }
+      ul{
+        li{
+          list-style: outside;
+          .c(#9b9b9b); .lh(1.8rem);
+        }
+      }
+      .cxt{
+        .c(#9b9b9b); .lh(1.4rem); .mg(20% auto); .tc();
+      }
+    }
+  }
+}

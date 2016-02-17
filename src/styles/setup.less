@@ -1,0 +1,51 @@
+@import "base.less";
+
+.setup{
+  .index01{
+    .w(100%);  .pd(30% 0rem 72%);
+    .bgc(black); .bgimg('@{cdnPath}stars.png');
+    .bgsize(400%); .bgpos(50% 0%);
+    background-repeat: no-repeat;
+    .text{
+      .w(100%); .tc(); .c(white); .ff('Helvetica');
+      .lh(3rem); .pd(1% 0rem);
+    }
+    .videoIntroduction{
+      .w(100%);
+      .playBtn{
+        .w(15%); .h(auto); .disB(); .mg(5% auto);
+      }
+    }
+    .components{
+      .w(100%); .mg(10% auto);
+      .pd(5% 0rem);
+      .amber{
+        .pa(); left: 10%; top: 100%;
+        .w(80%); .h(auto);
+      }
+    }
+  }
+
+  .index02{
+    .pd(30% 0rem 15%); .bgc(white);
+    .text{
+      .w(100%); .tc(); .ff('Helvetica');
+      .lh(2rem); .pd(1% 0rem);
+    }
+    .component{
+      .mg(25% 0rem 5%);
+      .num{
+        .bgc(#f9686a); .lh(2.2rem); .br(1.1rem);
+        .w(2.2rem); .h(2.2rem); .c(white); .mgc(); .tc();
+      }
+      .component_text{
+        .w(100%); .lh(1.6rem); .tc();
+        .pd(1.6rem 0rem);
+      }
+      img{
+        .w(70%); .h(auto);
+        .disB(); .mgc();
+      }
+    }
+  }
+}

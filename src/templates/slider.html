@@ -1,0 +1,20 @@
+<div class="sliderPanel">
+    <ul id="sliders" isActive="false">
+        <% for(var i = 0; i < data.length; i++){ %>
+            <li index="<%= i %>">
+                <img src="<%= data[i].src %>"/>
+            </li>
+        <% } %>
+    </ul>
+    <% if(data[0].headText){ %>
+        <div class="t4 headText"></div>
+    <% } %>
+    <ul class="btns">
+        <% for(var i = 0; i < data.length - 1; i++){ %>
+        <li class="" index="<%= i %>"></li>
+        <% } %>
+    </ul>
+    <% if(data[0].footText){ %>
+        <div class="t4 footText"></div>
+    <% } %>
+</div>
